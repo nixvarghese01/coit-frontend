@@ -19,7 +19,7 @@ yarn start        # http://localhost:3000
 yarn build        # production build in ./build
 ```
 
-> The backend URL is hardcoded in `src/App.js` (`fetch('http://<host>:8080/sentiment')`). Change it to point at your web API.
+> The web API URL comes from `REACT_APP_API_URL` at build time (default `http://localhost:8080`), e.g. `REACT_APP_API_URL=http://api.example.com yarn build`.
 
 ## Docker
 | File | What it does |
